@@ -4,7 +4,7 @@
 
 /* Definições de pinos GPIO para os LEDs do semáforo */
 #define LED_GREEN 11    // LED verde - Sinal "Siga"
-#define LED_BLUE 12  // LED azul na bitdoglab - Sinal "Atenção"
+#define LED_BLUE 12  // LED azul na bitdoglab e amarelo no simulador Wokwi - Sinal "Atenção"
 #define LED_RED 13 // LED vermelho - Sinal "Pare"
 
 /* Temporização do ciclo do semáforo (milissegundos) */
