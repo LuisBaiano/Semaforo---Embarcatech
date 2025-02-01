@@ -1,8 +1,3 @@
-# This is a copy of <PICO_SDK_PATH>/external/pico_sdk_import.cmake
-
-# This can be dropped into an external project to help locate this SDK
-# It should be include()ed prior to project()
-
 if (DEFINED ENV{PICO_SDK_PATH} AND (NOT PICO_SDK_PATH))
     set(PICO_SDK_PATH $ENV{PICO_SDK_PATH})
     message("Using PICO_SDK_PATH from environment ('${PICO_SDK_PATH}')")
@@ -63,9 +58,7 @@ if (NOT PICO_SDK_PATH)
         endif ()
         set(FETCHCONTENT_BASE_DIR ${FETCHCONTENT_BASE_DIR_SAVE})
     else ()
-        message(FATAL_ERROR
-                "SDK location was not specified. Please set PICO_SDK_PATH or set PICO_SDK_FETCH_FROM_GIT to on to fetch from git."
-                )
+
     endif ()
 endif ()
 
